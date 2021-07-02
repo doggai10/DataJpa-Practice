@@ -286,6 +286,16 @@ class MemberRepositoryTest {
 
     }
 
+    @Test
+    public void callCustom(){
+        //given
+        List<Member> result = memberRepository.findMemberCustom();
+        //when
+
+        //then
+
+    }
+
     @BeforeTestClass
     private Member saveMemberTeam(String name1, String name2, Team team1, Team team2) {
         Member m1 = new Member(name1, 10,team1);
